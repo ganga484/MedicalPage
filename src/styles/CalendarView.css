@@ -1,0 +1,199 @@
+.calendar-view {
+  flex: 1;
+  background-color: #f9fafb;
+  padding: 2px 2px;
+  border-radius: 14px;
+  /* box-shadow: 0 2px 12px rgba(0,0,0,0.06); */
+  flex-wrap: wrap;
+
+}
+
+.calendar-view h3 {
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #2563eb;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0px;
+}
+
+.calendar-day {
+  border-radius: 8px;
+  height: fit-content;
+  padding: 2px;
+  font-size: 12px;
+  cursor: default;
+  text-align: center;
+}
+
+
+.calendar-day span {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  color: #374151;
+}
+
+.appointments {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+
+.year-calendar {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-family: sans-serif;
+}
+
+.year-calendar h2 {
+  text-align: center;
+  color: #2563eb;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.months-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.month {
+  background-color: #fff;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.month h4 {
+  text-align: center;
+  color: #2563eb;
+  margin-bottom: 12px;
+}
+
+.month-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.day-label {
+  background-color: #e5e7eb;
+  font-weight: 700;
+  text-align: center;
+  padding: 4px 0;
+  font-size: 12px;
+  border-radius: 6px;
+  color: #374151;
+}
+
+.day-cell {
+  background-color: #f3f4f6;
+  border-radius: 6px;
+  padding: 6px;
+  text-align: center;
+  font-size: 12px;
+  color: #374151;
+  min-height: 40px;
+
+
+}
+
+.day-cell.padding {
+  background-color: transparent;
+  color: transparent;
+  pointer-events: none;
+}
+
+
+.pagination-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.pagination-controls button {
+  background-color: #2563eb;
+  color: white;
+  padding: 6px 12px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.pagination-controls button:disabled {
+  background-color: #a5b4fc;
+  cursor: not-allowed;
+}
+/* Container for vertical scrolling of time slots */
+.appointments.scroll-y {
+  display: flex;
+  flex-direction: column;
+  max-height: 90px; /* Adjust height as needed */
+  overflow-y: auto;
+  gap: 1px;
+  margin-top: 6px;
+  padding-right: 6px;
+  scrollbar-width: none; /* Firefox */
+}
+
+.appointments.scroll-y::-webkit-scrollbar {
+  width: 6px;
+
+}
+
+.appointments.scroll-y::-webkit-scrollbar-thumb {
+  /* background-color: #2563eb; */
+  border-radius: 3px;
+
+}
+
+/* Time slot base style */
+.time-slot {
+  background-color:#f9fafb;
+  color: rgb(91, 90, 90);
+  font-size: 12px;
+  font-weight: 600;
+
+  border-radius: 6px;
+  width: fit-content;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+/* Highlight selected time slot */
+.time-slot.selected {
+  background-color: #2563eb; /* amber/yellow */
+  color:white; /* dark text */
+}
+
+/* Hover effect */
+.time-slot:hover {
+  background-color: #1e40af; 
+  color: white;/* darker blue */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

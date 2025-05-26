@@ -1,0 +1,32 @@
+.upcoming-schedule {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9fafb;
+  border-radius: 14px;
+  width: 500px;
+}
+
+
+.upcoming-schedule h3 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #2563eb;
+}
+
+.day-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.day-group-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+.day-group h4 {
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #374151;
+}

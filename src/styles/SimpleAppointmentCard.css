@@ -1,0 +1,25 @@
+.appointment-card {
+  display: flex;
+  
+  gap: 12px;
+  background-color: #91a9c9b0;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  padding: 10px;
+  width: fit-content;
+  cursor: default;
+}
+
+.icon-placeholder {
+  font-size: 20px;
+
+  border-radius: 50%;
+  display: flex;
+  
+ 
+}
+
+.appointment-card h4 {
+  font-weight: 700;
+  font-size: 14px
+}

@@ -1,0 +1,47 @@
+/* Global resets & base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #374151; /* dark gray */
+}
+
+body, html, #root {
+  height: 100%;
+  background-color: #f9fafb; /* very light background */
+}
+
+/* App layout */
+.app-container {
+  
+  display: flex;
+  height: fit-content;
+  flex-direction: row;
+  overflow: scroll;
+  width: 1200px;
+  scrollbar-width: none;
+ 
+  justify-content: center;
+  margin: 5px;
+}
+
+.main-section {
+
+  flex-grow: 1;
+  /* height: fit-content; */
+  display: flex;
+  /* justify-content: space-around; */
+  flex-wrap: wrap;
+  background-color: white;
+  overflow-y: auto;
+  scrollbar-width: none;
+  min-width: 1000px;
+}
+.mainAppDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #374151;
+}
+
